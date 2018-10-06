@@ -1,0 +1,43 @@
+{
+  "name": "gatsby-course",
+  "description": "Gatsby Course",
+  "version": "1.0.0",
+  "author": "Luan Orlandi <orlandi.luan@gmail.com>",
+  "dependencies": {
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "bulma": "^0.7.1",
+    "gatsby": "^2.0.0",
+    "gatsby-plugin-google-analytics": "^2.0.6",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.0.1",
+    "node-sass": "^4.9.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby, course, portfolio, website, udemy"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "format": "prettier --write 'src/**/*.js'",
+    "prettier": "prettier",
+    "test": "prettier --list-different 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luanorlandi/gatsby-course"
+  }
+}
