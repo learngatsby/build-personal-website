@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-course",
-  "description": "Gatsby Course",
+  "name": "build-personal-website",
+  "description": "Build your personal website with Gatsby",
   "version": "1.0.0",
   "author": "Luan Orlandi <orlandi.luan@gmail.com>",
   "dependencies": {
@@ -20,14 +20,14 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby, course, portfolio, website, udemy"
+    "gatsby, course, portfolio, website"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write 'src/**/*.js'",
     "prettier": "prettier",
     "test": "prettier --list-different 'src/**/*.js'"
@@ -38,6 +38,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/luanorlandi/gatsby-course"
+    "url": "https://github.com/learngatsby/build-personal-website"
   }
 }

@@ -1,4 +1,4 @@
-const pathPrefix = '/gatsby-course';
+const pathPrefix = '/build-personal-website';
 
 module.exports = {
   pathPrefix,
