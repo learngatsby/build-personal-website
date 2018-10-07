@@ -11,7 +11,7 @@ import projectImage4 from '../assets/westworld-intro-creator.jpg';
 const projectCards = [
   {
     title: 'Curso de Gatsby',
-    subtitle: 'Curso na Udemy sobre Gatsby',
+    subtitle: 'Crie seu site pessoal usando React',
     link: 'https://github.com/luanorlandi/gatsby-course',
     imageLink: projectImage,
     tags: ['Gatsby', 'React'],
