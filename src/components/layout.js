@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
           />
           <meta
             property="og:url"
-            content="https://luanorlandi.github.io/gatsby-course"
+            content="http://learngatsby.github.io/build-personal-website"
           />
           <meta property="og:type" content="website" />
           <meta property="og:title" content={data.site.siteMetadata.title} />

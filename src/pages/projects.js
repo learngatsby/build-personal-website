@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Card from '../components/card';
-import projectImage from '../assets/gatsby-icon.png';
+import projectImage from '../assets/gatsby-course.png';
 import projectImage2 from '../assets/tic-tac-porg.jpg';
 import projectImage3 from '../assets/memepool.jpg';
 import projectImage4 from '../assets/westworld-intro-creator.jpg';

@@ -12,8 +12,7 @@ module.exports = {
       options: {
         name: 'Luan Orlandi',
         short_name: 'Luan Orlandi',
-        start_url:
-          process.env.NODE_ENV === 'production' ? `${pathPrefix}/` : '/',
+        start_url: '/',
         background_color: '#202021',
         theme_color: '#303030',
         display: 'minimal-ui',
