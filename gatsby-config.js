@@ -1,34 +1,43 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: 'Luan Orlandi',
+    author: '@luanorlandi',
+    siteUrl: 'https://luanorlandi.github.io',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: 'images',
+        path: `${__dirname}/src/assets/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: 'Luan Orlandi',
+        short_name: 'Luan Orlandi',
+        start_url: '/',
+        background_color: '#303030',
+        theme_color: '#303030',
+        display: 'minimal-ui',
+        icon: 'src/assets/images/favicon.png',
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_LUAN_ORLANDI,
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
+    'gatsby-plugin-sitemap',
   ],
-}
+};
