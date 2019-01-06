@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 const Card = ({
   title,
@@ -13,7 +15,7 @@ const Card = ({
       <div className="card-content">
         <div className="media">
           <div className="media-left">
-            {image()}
+            {image}
           </div>
           <div className="media-content">
             <h4 className="title has-text-light is-size-5-desktop is-size-6-touch">
@@ -40,13 +42,14 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   link: PropTypes.string,
-  image: PropTypes.func.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string),
+  image: PropTypes.node,
 };
 
 Card.defaultProps = {
   link: null,
   tags: [],
+  image: null,
 };
 
 export default Card;

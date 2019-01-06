@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 
 import Layout from 'components/Layout';
 import SEO from 'components/Seo';
+import Title from 'components/Title';
 
 const Stack = () => (
   <Layout>
@@ -20,9 +21,8 @@ const Stack = () => (
       />
     </Helmet>
     <section className="section is-size-4-desktop is-size-5-touch">
-      <h1 className="title has-text-centered has-text-light">Stack</h1>
+      <Title>Stack</Title>
       <div className="container has-text-centered">
-        <hr />
         <p className="content">
           I have experience with many modern tools,
           I select them for my projects depending on the usage.

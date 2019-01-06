@@ -1,15 +1,47 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from 'components/Layout';
 import SEO from 'components/Seo';
+import Title from 'components/Title';
 import Card from 'components/Card';
-import GatsbyCourse from 'components/Images/GatsbyCourse';
-import TicTacPorg from 'components/Images/TicTacPorg';
-import Memepool from 'components/Images/Memepool';
-import WestworldIntroCreator from 'components/Images/WestworldIntroCreator';
 
-const Projects = () => (
+export const queryImages = graphql`
+  query {
+    project1: file(relativePath: { eq: "gatsby-course.jpg" }) {
+      childImageSharp {
+        fixed(width: 96, height: 96) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    project2: file(relativePath: { eq: "memepool.jpg" }) {
+      childImageSharp {
+        fixed(width: 96, height: 96) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    project3: file(relativePath: { eq: "tic-tac-porg.jpg" }) {
+      childImageSharp {
+        fixed(width: 96, height: 96) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    project4: file(relativePath: { eq: "westworld-intro-creator.jpg" }) {
+      childImageSharp {
+        fixed(width: 96, height: 96) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
+
+const Projects = ({ data }) => (
   <Layout>
     <SEO
       title="Projects"
@@ -17,9 +49,8 @@ const Projects = () => (
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
     <section className="section is-size-4-desktop is-size-5-touch">
-      <h1 className="title has-text-centered has-text-light">Projects</h1>
+      <Title>Projects</Title>
       <div className="container">
-        <hr />
         <p className="has-text-centered">
           Some of my featured projects, see more on my
           {' '}
@@ -38,29 +69,29 @@ const Projects = () => (
               title="Gatsby Course"
               subtitle="Build your personal website using React"
               link="https://www.udemy.com/gatsby-crie-seu-site-pessoal"
-              image={GatsbyCourse}
               tags={['Gatsby', 'React']}
+              image={<Img fixed={data.project1.childImageSharp.fixed} />}
             />
             <Card
               title="Tic-tac-porg"
               subtitle="Play tic-tac-toe with Star Wars theme"
               link="https://luanorlandi.github.io/tic-tac-porg"
-              image={TicTacPorg}
               tags={['React', 'PWA']}
+              image={<Img fixed={data.project2.childImageSharp.fixed} />}
             />
             <Card
               title="Memepool"
               subtitle="Discord bot that play meme sounds"
               link="https://github.com/luanorlandi/memepool"
-              image={Memepool}
               tags={['Node', 'Heroku']}
+              image={<Img fixed={data.project3.childImageSharp.fixed} />}
             />
             <Card
               title="Westworld Intro Creator"
               subtitle="Create your own Westworld opening"
               link="https://westworldintrocreator.kassellabs.io/"
-              image={WestworldIntroCreator}
               tags={['Gatsby', 'React']}
+              image={<Img fixed={data.project4.childImageSharp.fixed} />}
             />
           </div>
         </div>
@@ -74,5 +105,9 @@ const Projects = () => (
     </section>
   </Layout>
 );
+
+Projects.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default Projects;
