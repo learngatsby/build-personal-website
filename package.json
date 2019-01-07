@@ -42,7 +42,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "lint": "eslint src/",
-    "test": "npm run test"
+    "test": "npm run lint"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
