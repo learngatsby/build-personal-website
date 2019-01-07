@@ -40,8 +40,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "lint": "eslint src/"
+    "serve": "gatsby serve"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
