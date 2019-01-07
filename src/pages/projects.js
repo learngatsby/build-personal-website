@@ -17,21 +17,21 @@ export const queryImages = graphql`
         }
       }
     }
-    project2: file(relativePath: { eq: "memepool.jpg" }) {
+    project2: file(relativePath: { eq: "kassel-labs.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    project3: file(relativePath: { eq: "tic-tac-porg.jpg" }) {
+    project3: file(relativePath: { eq: "tic-tac-porg.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    project4: file(relativePath: { eq: "westworld-intro-creator.jpg" }) {
+    project4: file(relativePath: { eq: "slack-parrot.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
@@ -73,24 +73,24 @@ const Projects = ({ data }) => (
               image={<Img fixed={data.project1.childImageSharp.fixed} />}
             />
             <Card
+              title="Kassel Labs"
+              subtitle="Helping people express their creativity and imagination"
+              link="https://kassellabs.io"
+              tags={['React']}
+              image={<Img fixed={data.project2.childImageSharp.fixed} />}
+            />
+            <Card
               title="Tic-tac-porg"
               subtitle="Play tic-tac-toe with Star Wars theme"
               link="https://luanorlandi.github.io/tic-tac-porg"
               tags={['React', 'PWA']}
-              image={<Img fixed={data.project2.childImageSharp.fixed} />}
-            />
-            <Card
-              title="Memepool"
-              subtitle="Discord bot that play meme sounds"
-              link="https://github.com/luanorlandi/memepool"
-              tags={['Node', 'Heroku']}
               image={<Img fixed={data.project3.childImageSharp.fixed} />}
             />
             <Card
-              title="Westworld Intro Creator"
-              subtitle="Create your own Westworld opening"
-              link="https://westworldintrocreator.kassellabs.io/"
-              tags={['Gatsby', 'React']}
+              title="Slack Parrot"
+              subtitle="Behold the Party Parrot on your terminal"
+              link="https://www.npmjs.com/package/slack-parrot"
+              tags={['Node']}
               image={<Img fixed={data.project4.childImageSharp.fixed} />}
             />
           </div>
