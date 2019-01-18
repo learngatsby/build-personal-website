@@ -1,11 +1,11 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const Projects = () => (
   <Layout>
-    <Helmet title="Projects | Luan Orlandi" />
+    <SEO title="Projects" />
     <h1>Projects</h1>
     <hr />
     <p>
