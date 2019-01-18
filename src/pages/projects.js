@@ -5,7 +5,11 @@ import SEO from '../components/SEO';
 
 const Projects = () => (
   <Layout>
-    <SEO title="Projects" />
+    <SEO
+      title="Projects"
+      description="Front-end developer, developing apps and web pages"
+      keywords="React, Node, Gatsby, Front-end, developer, API"
+    />
     <h1>Projects</h1>
     <hr />
     <p>
