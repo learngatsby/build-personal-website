@@ -21,6 +21,12 @@ const Home = () => (
       <p>
         I develop projects mostly with JavaScript using React and Node.
       </p>
+      <p>
+        Check out my
+        {' '}
+        <a href="/projects">projects</a>
+        {'.'}
+      </p>
     </section>
   </Layout>
 );
