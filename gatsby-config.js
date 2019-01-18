@@ -1,8 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Luan Orlandi',
-    author: '@luanorlandi',
-    siteUrl: 'https://luanorlandi.github.io',
+    title: 'Gatsby',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -4,11 +4,9 @@ import Layout from '../components/Layout';
 
 const Home = () => (
   <Layout>
-    <div>
-      <h1>Hello world!</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-    </div>
+    <h1>Hello world!</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
   </Layout>
 );
 
