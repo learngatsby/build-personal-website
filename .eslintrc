@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+      "max-len": [
+          "error",
+          {
+              "code": 80,
+              "ignoreUrls": true,
+              "ignoreStrings": true,
+              "ignoreTemplateLiterals": true
+          }
+      ],
+      "react/jsx-filename-extension": [
+          1, {
+              "extensions": [".js", ".jsx"]
+          }
+      ],
+      "react/forbid-prop-types": "off"
+  }
+}
