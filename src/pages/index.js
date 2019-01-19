@@ -10,14 +10,14 @@ const Home = () => (
       description="Front-end developer, developing apps and web pages"
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
-    <h1>
+    <h1 className="title has-text-centered">
       Luan Orlandi
     </h1>
-    <h2>
+    <h2 className="subtitle has-text-centered">
       Web Developer
     </h2>
-    <section>
-      <h4>
+    <section className="section content is-size-4-desktop is-size-5-touch">
+      <h4 className="title">
         Hello, I am Luan Orlandi!
       </h4>
       <p>

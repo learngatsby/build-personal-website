@@ -10,33 +10,35 @@ const Projects = () => (
       description="Front-end developer, developing apps and web pages"
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
-    <h1>Projects</h1>
-    <hr />
-    <p>
-      Some of my featured projects, see more on my
-      {' '}
-      <a href="https://github.com/luanorlandi">
-        GitHub
-      </a>
-      {'.'}
-    </p>
-    <ul>
-      <li>
-        <a href="https://www.udemy.com/gatsby-crie-seu-site-pessoal">
-          Gatsby Course
+    <section className="section is-size-4-desktop is-size-5-touch">
+      <h1 className="title has-text-centered">Projects</h1>
+      <hr />
+      <p className="has-text-centered">
+        Some of my featured projects, see more on my
+        {' '}
+        <a href="https://github.com/luanorlandi">
+          GitHub
         </a>
-      </li>
-      <li>
-        <a href="https://kassellabs.io">
-          Kassel Labs
-        </a>
-      </li>
-      <li>
-        <a href="https://luanorlandi.github.io/tic-tac-porg">
-          Tic-tac-porg
-        </a>
-      </li>
-    </ul>
+        {'.'}
+      </p>
+      <ul className="has-text-centered">
+        <li>
+          <a href="https://www.udemy.com/gatsby-crie-seu-site-pessoal">
+            Gatsby Course
+          </a>
+        </li>
+        <li>
+          <a href="https://kassellabs.io">
+            Kassel Labs
+          </a>
+        </li>
+        <li>
+          <a href="https://luanorlandi.github.io/tic-tac-porg">
+            Tic-tac-porg
+          </a>
+        </li>
+      </ul>
+    </section>
   </Layout>
 );
 
