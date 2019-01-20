@@ -31,6 +31,13 @@ export const queryImages = graphql`
         }
       }
     }
+    project4: file(relativePath: { eq: "slack-parrot.png" }) {
+      childImageSharp {
+        fixed(width: 96, height: 96) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
 `;
 
@@ -73,6 +80,13 @@ const Projects = ({ data }) => (
             link="https://luanorlandi.github.io/tic-tac-porg"
             tags={['React', 'PWA']}
             image={<Img fixed={data.project3.childImageSharp.fixed} />}
+          />
+          <Card
+            title="Slack Parrot"
+            subtitle="Behold the Party Parrot on your terminal"
+            link="https://www.npmjs.com/package/slack-parrot"
+            tags={['Node']}
+            image={<Img fixed={data.project4.childImageSharp.fixed} />}
           />
         </div>
       </div>
