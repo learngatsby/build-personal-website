@@ -16,10 +16,10 @@ const Card = ({
             {image}
           </div>
           <div className="media-content">
-            <h4 className="title is-size-5-desktop is-size-6-touch">
+            <h4 className="title has-text-light is-size-5-desktop is-size-6-touch">
               {title}
             </h4>
-            <p className="subtitle is-size-5-desktop is-size-6-touch">
+            <p className="subtitle has-text-light is-size-5-desktop is-size-6-touch">
               {subtitle}
             </p>
             <div className="tags">

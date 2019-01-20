@@ -37,10 +37,10 @@ const Home = () => (
         )}
       />
     </figure>
-    <h1 className="title has-text-centered">
+    <h1 className="title has-text-centered has-text-light">
       Luan Orlandi
     </h1>
-    <h2 className="subtitle has-text-centered">
+    <h2 className="subtitle has-text-centered has-text-warning">
       Web Developer
     </h2>
     <div className="has-text-centered">
@@ -66,7 +66,7 @@ const Home = () => (
       </a>
     </div>
     <section className="section content is-size-4-desktop is-size-5-touch">
-      <h4 className="title">
+      <h4 className="title has-text-light">
         Hello, I am Luan Orlandi!
       </h4>
       <p>

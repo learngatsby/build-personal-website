@@ -1,3 +1,8 @@
 .card {
-  margin: 12px 0;
+  margin: 16px 0;
+  box-shadow: none;
+
+  &:hover {
+    background-color: $card-hover-color;
+  }
 }
