@@ -23,5 +23,14 @@ module.exports = {
         icon: 'src/assets/images/favicon.png',
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_BUILD_PERSONAL_WEBSITE,
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
   ],
 };
