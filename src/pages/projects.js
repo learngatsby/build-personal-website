@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Card from 'components/Card';
@@ -76,6 +76,12 @@ const Projects = ({ data }) => (
           />
         </div>
       </div>
+      <p className="has-text-centered">
+        Check out my
+        {' '}
+        <Link to="/blog">blog</Link>
+        {'.'}
+      </p>
     </section>
   </Layout>
 );
