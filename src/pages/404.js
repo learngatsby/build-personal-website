@@ -10,7 +10,11 @@ const NotFoundPage = () => (
     <section className="section container">
       <Title>404: Not Found</Title>
       <p className="has-text-centered">
-        You just hit a route that does not exist.
+        You just hit a route that does not exist
+        {' '}
+        <span className="emoji" role="img" aria-label="confused">
+          😕
+        </span>
       </p>
     </section>
   </Layout>

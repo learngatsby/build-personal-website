@@ -68,6 +68,10 @@ const Home = () => (
     <section className="section content is-size-4-desktop is-size-5-touch">
       <h4 className="title has-text-light">
         Hello, I am Luan Orlandi!
+        {' '}
+        <span className="emoji" role="img" aria-label="wave">
+          👋
+        </span>
       </h4>
       <p>
         {`I'm a Web Developer, I work with Front-end creating apps and web pages.
