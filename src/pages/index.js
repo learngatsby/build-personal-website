@@ -8,12 +8,17 @@ import {
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
+import photo from '../assets/images/luanorlandi.jpg';
+
 const Home = () => (
   <Layout>
     <SEO
       description="Front-end developer, developing apps and web pages"
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
+    <figure className="photo image is-128x128">
+      <img className="is-rounded" src={photo} alt="Luan Orlandi" />
+    </figure>
     <h1 className="title has-text-centered">
       Luan Orlandi
     </h1>
