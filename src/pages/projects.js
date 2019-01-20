@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import Card from '../components/Card/Card';
+import Card from 'components/Card';
+import Layout from 'components/Layout';
+import SEO from 'components/SEO';
 
 export const queryImages = graphql`
   query {
