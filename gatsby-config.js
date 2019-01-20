@@ -20,9 +20,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
+        name: 'Luan Orlandi',
+        short_name: 'Luan Orlandi',
+        start_url: '/',
+        background_color: '#303030',
+        theme_color: '#303030',
+        display: 'minimal-ui',
         icon: 'src/assets/images/favicon.png',
       },
     },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
