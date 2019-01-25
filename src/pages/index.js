@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 
@@ -18,7 +19,7 @@ const Home = () => (
       <p>
         Check out my
         {' '}
-        <a href="/projects">projects</a>
+        <Link to="/projects">projects</Link>
         .
       </p>
     </section>
