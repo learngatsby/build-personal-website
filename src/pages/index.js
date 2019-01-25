@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import Helmet from 'react-helmet';
 
 import Layout from '../components/Layout';
 
 const Home = () => (
   <Layout>
+    <Helmet title="Luan Orlandi" />
     <h1>Luan Orlandi</h1>
     <h2>Web Developer</h2>
     <section>

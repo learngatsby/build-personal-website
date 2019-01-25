@@ -1,9 +1,11 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import Layout from '../components/Layout';
 
 const Projects = () => (
   <Layout>
+    <Helmet title="Projects | Luan Orlandi" />
     <h1>Projects</h1>
     <hr />
     <p>
