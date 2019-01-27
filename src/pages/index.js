@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithub, faTwitter, faMedium, faLinkedin,
@@ -8,8 +9,6 @@ import {
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
-import photo from '../assets/images/luanorlandi.jpg';
-
 const Home = () => (
   <Layout>
     <SEO
@@ -17,7 +16,26 @@ const Home = () => (
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
     <figure className="photo image is-128x128">
-      <img className="is-rounded" src={photo} alt="Luan Orlandi" />
+      <StaticQuery
+        query={graphql`
+          query {
+            file(relativePath: { eq: "luanorlandi.jpg" }) {
+              childImageSharp {
+                fixed(width: 128, height: 128) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        `}
+        render={data => (
+          <Img
+            fixed={data.file.childImageSharp.fixed}
+            imgStyle={{ borderRadius: '100%' }}
+            alt="Luan Orlandi"
+          />
+        )}
+      />
     </figure>
     <h1 className="title has-text-centered">Luan Orlandi</h1>
     <h2 className="subtitle has-text-centered">Web Developer</h2>
