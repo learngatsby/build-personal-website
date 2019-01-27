@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -7,7 +6,6 @@ import SEO from '../components/SEO';
 const Projects = () => (
   <Layout>
     <SEO
-      pageTitle="Projects"
       description="Front-end developer, developing apps and web pages"
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
@@ -17,7 +15,7 @@ const Projects = () => (
       Some of my projects, see more on my
       {' '}
       <a href="https://github.com/luanorlandi">
-        GitHub
+              GitHub
       </a>
       .
     </p>

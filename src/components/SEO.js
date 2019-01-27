@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import ogImage from '../assets/images/luanorlandi.jpg';
 
 const siteQuery = graphql`
-  query DefaulSEOQuery {
+  query DefaultSEOQuery {
     site {
       siteMetadata {
         title
