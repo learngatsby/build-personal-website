@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Helmet from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub, faTwitter, faMedium, faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -11,35 +14,27 @@ const Home = () => (
       description="Front-end developer, developing apps and web pages"
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
-    <Helmet>
-      <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossOrigin="anonymous"
-      />
-    </Helmet>
     <h1 className="title has-text-centered">Luan Orlandi</h1>
     <h2 className="subtitle has-text-centered">Web Developer</h2>
     <div className="has-text-centered">
       <a href="https://github.com/luanorlandi" aria-label="github">
-        <span className="icon is-large">
-          <i className="fab fa-2x fa-github" />
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faGithub} />
         </span>
       </a>
       <a href="https://twitter.com/luanorlandi" aria-label="twitter">
-        <span className="icon is-large">
-          <i className="fab fa-2x fa-twitter" />
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faTwitter} />
         </span>
       </a>
       <a href="https://medium.com/@luanorlandi" aria-label="medium">
-        <span className="icon is-large">
-          <i className="fab fa-2x fa-medium" />
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faMedium} />
         </span>
       </a>
       <a href="https://www.linkedin.com/in/luanorlandi/" aria-label="linkedin">
-        <span className="icon is-large">
-          <i className="fab fa-2x fa-linkedin" />
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faLinkedin} />
         </span>
       </a>
     </div>
