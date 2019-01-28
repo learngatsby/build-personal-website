@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Card from '../components/Card/Card';
 
 export const queryImage = graphql`
   query {
@@ -51,70 +52,27 @@ const Projects = ({ data }) => (
       </p>
       <div className="columns">
         <div className="column is-half is-offset-one-quarter">
-          <a href="https://www.udemy.com/gatsby-crie-seu-site-pessoal">
-            <div className="card">
-              <div className="card-content">
-                <div className="media">
-                  <div className="media-left">
-                    <Img fixed={data.propject1.childImageSharp.fixed} alt="Gatsby Course" />
-                  </div>
-                  <div className="media-content">
-                    <h4 className="title is-size-5-desktop is-size-6-touch">Gatsby Course</h4>
-                    <p className="subtitle is-size-5-desktop is-size-6-touch">Build your personal website using React</p>
-                    <div className="tags">
-                      <span className="tag">Gatsby</span>
-                      <span className="tag">React</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://kassellabs.io">
-            <div className="card">
-              <div className="card-content">
-                <div className="media">
-                  <div className="media-left">
-                    <Img fixed={data.project2.childImageSharp.fixed} alt="Kassel Labs" />
-                  </div>
-                  <div className="media-content">
-                    <h4 className="title is-size-5-desktop is-size-6-touch">
-                      Kassel Labs
-                    </h4>
-                    <p className="subtitle is-size-5-desktop is-size-6-touch">
-                      Helping people express their creativity and imagination
-                    </p>
-                    <div className="tags">
-                      <span className="tag">React</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://luanorlandi.github.io/tic-tac-porg">
-            <div className="card">
-              <div className="card-content">
-                <div className="media">
-                  <div className="media-left">
-                    <Img fixed={data.project3.childImageSharp.fixed} alt="Tic-tac-porg" />
-                  </div>
-                  <div className="media-content">
-                    <h4 className="title is-size-5-desktop is-size-6-touch">
-                      Tic-tac-porg
-                    </h4>
-                    <p className="subtitle is-size-5-desktop is-size-6-touch">
-                      Play tic-tac-toe with Star Wars theme
-                    </p>
-                    <div className="tags">
-                      <span className="tag">React</span>
-                      <span className="tag">PWA</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
+          <Card
+            title="Gatsby Course"
+            subtitle="Build your personal website using React"
+            link="https://www.udemy.com/gatsby-crie-seu-site-pessoal"
+            tags={['Gatsby', 'React']}
+            image={<Img fixed={data.propject1.childImageSharp.fixed} alt="Gatsby Course" />}
+          />
+          <Card
+            title="Kassel Labs"
+            subtitle="Helping people express their creativity and imagination"
+            link="https://kassellabs.io"
+            tags={['React']}
+            image={<Img fixed={data.project2.childImageSharp.fixed} />}
+          />
+          <Card
+            title="Tic-tac-porg"
+            subtitle="Play tic-tac-toe with Star Wars theme"
+            link="https://luanorlandi.github.io/tic-tac-porg"
+            tags={['React', 'PWA']}
+            image={<Img fixed={data.project3.childImageSharp.fixed} />}
+          />
         </div>
       </div>
     </section>
