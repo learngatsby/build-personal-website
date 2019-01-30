@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from 'components/Layout';
@@ -36,6 +36,7 @@ export const queryImage = graphql`
 const Projects = ({ data }) => (
   <Layout>
     <SEO
+      pageTitle="Projects"
       description="Front-end developer, developing apps and web pages"
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
@@ -50,8 +51,8 @@ const Projects = ({ data }) => (
         </a>
         .
       </p>
-      <div className="columns">
-        <div className="column is-half is-offset-one-quarter">
+      <div className="columns is-centered">
+        <div className="column is-half">
           <Card
             title="Gatsby Course"
             subtitle="Build your personal website using React"
@@ -75,6 +76,12 @@ const Projects = ({ data }) => (
           />
         </div>
       </div>
+      <p className="has-text-centered">
+        Check out my
+        {' '}
+        <Link to="/blog">blog</Link>
+        .
+      </p>
     </section>
   </Layout>
 );
