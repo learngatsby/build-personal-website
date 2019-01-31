@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
+import Title from 'components/Title';
 
 const Stack = () => (
   <Layout>
@@ -19,8 +20,7 @@ const Stack = () => (
       />
     </Helmet>
     <section className="section is-size-4-desktop is-size-5-touch">
-      <h1 className="title has-text-centered">Stack</h1>
-      <hr />
+      <Title>Stack</Title>
       <div className="has-text-centered">
         <p className="content">
           I have experience with many modern tools,
@@ -31,7 +31,7 @@ const Stack = () => (
           <div className="column is-half">
             <a
               frameBorder="0"
-              data-theme="light"
+              data-theme="dark"
               data-layers="1,2,3,4"
               data-stack-embed="true"
               href="https://embed.stackshare.io/stacks/embed/8c28185217d10812f81a6efc56aff4"

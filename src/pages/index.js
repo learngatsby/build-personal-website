@@ -37,8 +37,8 @@ const Home = () => (
         )}
       />
     </figure>
-    <h1 className="title has-text-centered">Luan Orlandi</h1>
-    <h2 className="subtitle has-text-centered">Web Developer</h2>
+    <h1 className="title has-text-centered has-text-light">Luan Orlandi</h1>
+    <h2 className="subtitle has-text-centered has-text-warning">Web Developer</h2>
     <div className="has-text-centered">
       <a href="https://github.com/luanorlandi" aria-label="github">
         <span className="icon is-large fa-2x">
@@ -62,7 +62,7 @@ const Home = () => (
       </a>
     </div>
     <section className="section content is-size-4-desktop is-size-5-touch">
-      <h4 className="title">Hello, I am Luan Orlandi!</h4>
+      <h4 className="title has-text-light">Hello, I am Luan Orlandi!</h4>
       <p>
         {`I'm a Web Developer, I work with Front-end creating apps and web pages.
         I participate in events about technology and I like to study productivity and communication, it helps me stay organized and collaborative.`}

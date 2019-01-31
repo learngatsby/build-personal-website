@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import Card from 'components/Card';
+import Title from 'components/Title';
 
 export const queryImage = graphql`
   query {
@@ -41,8 +42,7 @@ const Projects = ({ data }) => (
       keywords="React, Node, Gatsby, Front-end, developer, API"
     />
     <section className="section is-size-4-desktop is-size-5-touch">
-      <h1 className="title has-text-centered">Projects</h1>
-      <hr />
+      <Title>Projects</Title>
       <p className="has-text-centered">
         Some of my featured projects, see more on my
         {' '}
