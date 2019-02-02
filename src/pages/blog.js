@@ -55,18 +55,18 @@ const Blog = ({ data }) => (
       <div className="columns is-centered">
         <div className="column is-half">
           <Card
-            title="How Gatsby is blazing fast"
-            subtitle="Performance is user experience. Gatsby build fast websites out-of-the-box"
-            link="https://medium.freecodecamp.org/how-gatsby-is-blazing-fast-c99a6f2d405e"
+            title="How Gatsby is so blazing fast"
+            subtitle="Performance greatly affects the user experience. Gatsby builds fast websites out-of-the-box"
+            link="https://medium.freecodecamp.org/how-gatsby-is-so-blazing-fast-c99a6f2d405e"
             tags={['Gatsby']}
-            image={<Img fixed={data.post1.childImageSharp.fixed} alt="Gatsby Course" />}
+            image={<Img fixed={data.post1.childImageSharp.fixed} alt="Fast as the DeLorean" />}
           />
           <Card
             title="Learn React easily with this rule"
             subtitle="Make it fun"
             link="https://medium.com/@luanorlandi/learn-react-easily-with-this-rule-a715b818a358"
             tags={['React']}
-            image={<Img fixed={data.post2.childImageSharp.fixed} />}
+            image={<Img fixed={data.post2.childImageSharp.fixed} alt="Play it like Lego" />}
           />
         </div>
       </div>

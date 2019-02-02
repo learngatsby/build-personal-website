@@ -31,6 +31,13 @@ export const queryImage = graphql`
         }
       }
     }
+    project4: file(relativePath: { eq: "slack-parrot.png" }) {
+      childImageSharp {
+        fixed(width: 96, height: 96) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
 `;
 
@@ -65,14 +72,21 @@ const Projects = ({ data }) => (
             subtitle="Helping people express their creativity and imagination"
             link="https://kassellabs.io"
             tags={['React']}
-            image={<Img fixed={data.project2.childImageSharp.fixed} />}
+            image={<Img fixed={data.project2.childImageSharp.fixed} alt="Kassel Labs logo" />}
           />
           <Card
             title="Tic-tac-porg"
             subtitle="Play tic-tac-toe with Star Wars theme"
             link="https://luanorlandi.github.io/tic-tac-porg"
             tags={['React', 'PWA']}
-            image={<Img fixed={data.project3.childImageSharp.fixed} />}
+            image={<Img fixed={data.project3.childImageSharp.fixed} alt="Tic tac toe with porgs and Chewbacca" />}
+          />
+          <Card
+            title="Slack Parrot"
+            subtitle="Behold the Party Parrot on your terminal"
+            link="https://www.npmjs.com/package/slack-parrot"
+            tags={['Node']}
+            image={<Img fixed={data.project4.childImageSharp.fixed} alt="Party parrot animation" />}
           />
         </div>
       </div>
