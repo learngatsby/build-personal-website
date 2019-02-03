@@ -58,7 +58,7 @@ jobs:
               git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
               git rm -rf .
               cd ..
-              npm run build --prefix-paths
+              npm run build
               cp -a public/. source/.
               mkdir -p source/.circleci && cp -a .circleci/. source/.circleci/.
               cd source
